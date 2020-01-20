@@ -1,0 +1,71 @@
+
+body{ 
+    background-color: maroon;
+}
+button{
+    background-color:lightgray;
+    border-radius: 15px;
+	box-shadow: 5px 10px 10px;
+
+}
+.main_page{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+button a:hover { color: black; 
+    font-weight: bold; 
+    text-decoration: underline;
+
+}
+/* h1{
+    text-align: center;
+    width: 1000px;
+} */
+.container{
+    text-align: center;
+}
+
+.booth{
+    width: 400px;
+    background-color: #ccc;
+    border: 10px solid #ddd;
+    border-radius: 15px;
+	box-shadow: 2px 5px 5px;
+    /* margin: auto; */
+    
+}
+canvas{
+    border-radius: 15px;
+    box-shadow: 5px 10px 10px;
+    background-color: black;
+}
+
+
+.thumbnail img {
+    border: 1px solid #000;
+    border-radius: 15px;
+	box-shadow: 5px 10px 10px;
+}
+
+.page_numbers{
+    background-color: mintcream;
+    border-radius: 15px;
+	box-shadow: 5px 10px 10px;
+}
+
+.prevew_container{
+    border-radius: 15px;
+	box-shadow: 5px 10px 10px;
+}
+
+.footer {
+    height: 50px;
+    background-color: red;
+    text-align: right;
+    padding: 10px;
+    border-radius: 15px;
+	box-shadow: 5px 10px 10px;
+  }
