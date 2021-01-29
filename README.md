@@ -14,8 +14,8 @@ You can also add stickers and frames to your images.
    You will find the HTDOCS folder in the following path if you installed in on your C drive.
    C:\xampp\htdocs
 3. Then Open the project on vs Code editor.
-    -run php -v 
-    -To setup database navigate to config folder and run php database.php followed by php setup.php
+    - run php -v 
+    - To setup database navigate to config folder and run php database.php followed by php setup.php
 4. Go to http://localhost/camagru/ and navigate the website as you would with any other website.
 ## Testing
 
