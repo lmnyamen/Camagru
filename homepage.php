@@ -14,7 +14,7 @@ function like_count($image_id)
     // $conn = connectDB();
     $DB_DSN = "localhost";
     $DB_USER = "root";
-    $DB_PASSWORD = "lmnyamen";
+    $DB_PASSWORD = "";
     $DB_NAME = "camagru";
     $conn = null;
     try {
@@ -107,16 +107,16 @@ $start_limit = ($current_page - 1) * $results_per_page;
                     ?><th>
                     <td>
                         <button>
-                            <a href="http://localhost:8082/camagru/images/likes.php?username=<?php echo  $_SESSION['username'] ?> &image=<?php echo $data['image'] ?> &id=<?php echo $_SESSION['id'] ?>">likes</a>
+                            <a href="http://localhost:8080/camagru/images/likes.php?username=<?php echo  $_SESSION['username'] ?> &image=<?php echo $data['image'] ?> &id=<?php echo $_SESSION['id'] ?>">likes</a>
                             <button> <?php echo like_count($data['image']); ?> </button>
                         </button>
                         <button>
-                            <a href="http://localhost:8082/camagru/images/comments.php?username=<?php echo  $_SESSION['username'] ?> &image=<?php echo $data['image'] ?> &id=<?php echo $_SESSION['id'] ?>">comment</a>
+                            <a href="http://localhost:8080/camagru/images/comments.php?username=<?php echo  $_SESSION['username'] ?> &image=<?php echo $data['image'] ?> &id=<?php echo $_SESSION['id'] ?>">comment</a>
                             <!-- <button>view</button> -->
                         </button>
                         <img src="uploads/<?php echo $data['image']; ?>" width="150" height="150">
                         <button>
-                            <a href="http://localhost:8082/camagru/images/delete.php?username=<?php echo  $_SESSION['username'] ?> &image=<?php echo $data['image'] ?> &id=<?php echo $_SESSION['id'] ?>">delete</a>
+                            <a href="http://localhost:8080/camagru/images/delete.php?username=<?php echo  $_SESSION['username'] ?> &image=<?php echo $data['image'] ?> &id=<?php echo $_SESSION['id'] ?>">delete</a>
                         </button>
                     </td>
                 <?php

@@ -53,7 +53,7 @@ if ((isset($_GET['username']) && !empty($_GET['username'])) AND (isset($_GET['im
         if ($user_details['notification'] === 'yes' && ($user_name['username'] != $_SESSION['username']))
             {
                 $header = "Hi " . $user_name['username'] . "\n\n"; 
-                $message = $_SESSION['username'] . " Just liked your photo. Click here to view http://localhost:8082/camagru";
+                $message = $_SESSION['username'] . " Just liked your photo. Click here to view http://localhost:8080/camagru";
                 mail($user_details['email'], 'Notifications' ,$message, $header);
             }
 

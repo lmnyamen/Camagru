@@ -6,7 +6,7 @@ session_start();
 
 $DB_DSN ="localhost";
 $DB_USER = "root";
-$DB_PASSWORD = "lmnyamen";
+$DB_PASSWORD = "";
 $DB_NAME = "camagru";
 
 try {
@@ -166,7 +166,7 @@ try {
                     // sendemail($email, $vcode);
                     
                     $header = "Hi " . "Camagru user" . "\n\n"; 
-                    $message = ' you have changed your password. Click here to verify your email http://localhost:8082/camagru/forms/reg_server.php?email='.$email.'&vcode='.$vcode.'';
+                    $message = ' you have changed your password. Click here to verify your email http://localhost:8080/camagru/forms/reg_server.php?email='.$email.'&vcode='.$vcode.'';
                     mail($email, 'Notifications' ,$message, $header);
                     // echo "<p> <a href='login_form.php'> <b>Log in </b></a></p";
                     echo "An email has been sent to your address, Kindly verify your email";
@@ -267,7 +267,7 @@ try {
                 $user->execute();
 
                 $header = "Hi " . "Camagru user" . "\n\n"; 
-                $message = ' you have changed your email. Click here to verify your email http://localhost:8082/camagru/forms/reg_server.php?email='.$email.'&vcode='.$vcode.'';
+                $message = ' you have changed your email. Click here to verify your email http://localhost:8080/camagru/forms/reg_server.php?email='.$email.'&vcode='.$vcode.'';
                 mail($email, 'Notifications' ,$message, $header);
 
                 echo "you have updated your email, Kindly verify it";
@@ -319,7 +319,7 @@ function sendemail($email, $vcode)
     Thanks for signing up!
     
     Please click this link to activate your account:
-    http://localhost:8082/camagru/forms/reg_server.php?email='.$email.'&vcode='.$vcode.'
+    http://localhost:8080/camagru/forms/reg_server.php?email='.$email.'&vcode='.$vcode.'
     
     '; // Our message above including the link
     $headers = 'From: admin @ camagru . com';
@@ -328,7 +328,7 @@ function sendemail($email, $vcode)
     // if ($user_details['notifications'] === 'Yes')
     //     {
     //         $header = "Hi " . $user_row['username'] . "\n\n"; 
-    //         $message = $_SESSION['user_session'] . " Just comment on you photo. Click here to reply http://localhost:8082/camagru";
+    //         $message = $_SESSION['user_session'] . " Just comment on you photo. Click here to reply http://localhost:8080/camagru";
     //         mail($user_details['email'], 'Notifications' ,$message, $header);
     //     }
 }
